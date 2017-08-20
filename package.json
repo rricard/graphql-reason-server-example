@@ -5,7 +5,10 @@
     "clean": "bsb -clean-world",
     "build": "bsb -make-world",
     "watch": "bsb -make-world -w",
-    "test": "jest"
+    "pretest": "npm run build",
+    "prestart": "npm run build",
+    "test": "jest",
+    "start": "node ./lib/js/src/server.js"
   },
   "keywords": [
     "BuckleScript"
