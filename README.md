@@ -1,18 +1,45 @@
-# Basic Reason Template
+# Basic Reason GraphQL Server Template
 
-Hello! This project allows you to quickly get started with Reason and BuckleScript. If you wanted a more sophisticated version, try the `react` template (`bsb -theme react -init .`).
+Hello! This project allows you to quickly get started with Reason, BuckleScript with GraphQL.
 
-# Build
-```
-npm run build
-```
-
-# Build + Watch
+Just clone it!
 
 ```
-npm run watch
+git clone https://github.com/rricard/graphql-reason-server-example.git
+cd graphql-reason-server-example
+yarn
 ```
 
+## Build
 
-# Editor
-If you use `vscode`, Press `Windows + Shift + B` it will build automatically
+```
+yarn build
+```
+
+## Build + Watch
+
+```
+yarn watch
+```
+
+## Test
+
+Requires a built project
+
+```
+yarn test
+```
+
+## Test + Watch
+
+Requires a built project (you should have a watched build while doing this one)
+
+```
+yarn test -- --watch
+```
+
+## Run
+
+```
+yarn start
+```
