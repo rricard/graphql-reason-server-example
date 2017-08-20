@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Query.firstExample returns a single entry 1`] = `
+Object {
+  "data": Object {
+    "firstExample": Object {
+      "id": "1",
+      "name": "FIRST EXAMPLE",
+    },
+  },
+}
+`;

@@ -8,15 +8,12 @@ let () =
     (
       fun () =>
         testPromise
-          "returns a capitalized name"
+          "returns a single entry"
           (
             fun () =>
-              GraphQL.run Schema.schema "{ firstExample { name } }" |>
+              GraphQL.run Schema.schema "{ firstExample { name, id } }" |>
               Js.Promise.then_ (
-                fun execResult =>
-                  Js.Promise.resolve (
-                    expect execResult##data##firstExample##name |> toEqual "FIRST EXAMPLE"
-                  )
+                fun execResult => Js.Promise.resolve (expect execResult |> toMatchSnapshot)
               )
           )
     );

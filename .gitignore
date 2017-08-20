@@ -24,4 +24,11 @@ lib/bs
 .vscode
 .merlin
 node_modules
-lib
+lib/*
+!lib/js
+lib/js/*
+!lib/js/src
+lib/js/src/*
+!lib/js/src/__tests__
+lib/js/src/__tests__/*
+!lib/js/src/__tests__/__snapshots__
