@@ -2,7 +2,7 @@ open Jest;
 
 open ExpectJs;
 
-let () =
+let () = {
   describe
     "Query.firstExample"
     (
@@ -17,3 +17,18 @@ let () =
               )
           )
     );
+  describe
+    "Query.examples"
+    (
+      fun () =>
+        testPromise
+          "returns multiple entries"
+          (
+            fun () =>
+              GraphQL.run Schema.schema "{ examples { name, id } }" |>
+              Js.Promise.then_ (
+                fun execResult => Js.Promise.resolve (expect execResult |> toMatchSnapshot)
+              )
+          )
+    )
+};

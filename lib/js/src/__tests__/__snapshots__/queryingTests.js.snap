@@ -1,5 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Query.examples returns multiple entries 1`] = `
+Object {
+  "data": Object {
+    "examples": Array [
+      Object {
+        "id": "1",
+        "name": "FIRST EXAMPLE",
+      },
+      Object {
+        "id": "2",
+        "name": "SECOND EXAMPLE",
+      },
+      Object {
+        "id": "3",
+        "name": "THIRD EXAMPLE",
+      },
+    ],
+  },
+}
+`;
+
 exports[`Query.firstExample returns a single entry 1`] = `
 Object {
   "data": Object {
