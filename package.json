@@ -4,13 +4,25 @@
   "scripts": {
     "clean": "bsb -clean-world",
     "build": "bsb -make-world",
-    "watch": "bsb -make-world -w"
+    "watch": "bsb -make-world -w",
+    "test": "jest"
   },
   "keywords": [
     "BuckleScript"
   ],
   "license": "MIT",
   "devDependencies": {
-    "bs-platform": "1.8.2"
+    "bs-jest": "^0.1.0",
+    "bs-platform": "1.8.2",
+    "jest": "^19.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bs-apollo-server-express": "^0.3.1",
+    "bs-express": "^0.0.2",
+    "bs-graphql": "^0.3.1",
+    "bs-graphql-tools": "^0.3.1",
+    "express": "^4.15.4",
+    "graphql": "^0.10.5"
   }
 }
